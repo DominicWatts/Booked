@@ -1,0 +1,22 @@
+<?php
+use Xigen\Booked\Helper\Booked;
+
+?>
+<?php if ($booked = $block->getBooked()): ?>
+<br>
+<table class="admin__table-secondary order-account-information-table">
+    <tbody>
+        <tr>
+            <th style="background-color: #fff;"><?= $block->escapeHtml(__('Order Booked')) ?></th>
+            <td style="background-color: #fff;">
+                <?php if ($booked == Booked::BOOKED): ?>
+                    <?= $block->escapeHtml(__("Yes")); ?>
+                <?php endif;?>
+                <?php if ($booked == Booked::NOT_BOOKED): ?>
+                    <?= $block->escapeHtml(__("No")); ?>
+                <?php endif;?>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<?php endif; ?>

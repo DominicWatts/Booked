@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="sales_order_columns">
+        <column name="booked">
+            <argument name="data" xsi:type="array">
+                <item name="options" xsi:type="object">Xigen\Booked\Ui\Component\Listing\Column\Booked</item>
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">60</item>
+                    <item name="filter" xsi:type="string">select</item>
+                    <item name="label" translate="true" xsi:type="string">Booked</item>
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/select</item>
+                    <item name="dataType" xsi:type="string">select</item>
+                    <item name="editor" xsi:type="array">
+                        <item name="editorType" xsi:type="string">select</item>
+                    </item>
+                </item>
+            </argument>
+        </column>
+    </columns>
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction">
+            <action name="booked">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="type" xsi:type="string">booked</item>
+                        <item name="label" xsi:type="string" translate="true">Booked</item>
+                    </item>
+                </argument>
+                <argument name="actions" xsi:type="array">
+                    <item name="0" xsi:type="array">
+                        <item name="type" xsi:type="string">enable</item>
+                        <item name="label" xsi:type="string" translate="true">Yes</item>
+                        <item name="url" xsi:type="url" path="booked/index/massBooked">
+                            <param name="booked">1</param>
+                        </item>
+                    </item>
+                    <item name="1" xsi:type="array">
+                        <item name="type" xsi:type="string">disable</item>
+                        <item name="label" xsi:type="string" translate="true">No</item>
+                        <item name="url" xsi:type="url" path="booked/index/massBooked">
+                            <param name="booked">2</param>
+                        </item>
+                    </item>
+                </argument>
+            </action>
+        </massaction>
+    </listingToolbar>
+</listing>

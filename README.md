@@ -2,7 +2,7 @@
 
 ![phpcs](https://github.com/DominicWatts/Booked/workflows/phpcs/badge.svg)
 
-![PHPCompatibility](https://github.com/Booked/OrderHistory/workflows/PHPCompatibility/badge.svg)
+![PHPCompatibility](https://github.com/DominicWatts/Booked/workflows/PHPCompatibility/badge.svg)
 
 ![PHPStan](https://github.com/DominicWatts/Booked/workflows/PHPStan/badge.svg)
 
@@ -17,3 +17,5 @@
 ## Usage
 
 Admin grid
+
+View Order

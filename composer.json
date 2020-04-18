@@ -1,0 +1,33 @@
+{
+    "name": "dominicwatts/booked",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "email": "dominic@xigen.co.uk",
+            "name": "Dominic Xigen"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "require": {
+        "magento/framework": "*",
+        "php": ">=5.6.0",
+        "magento/module-sales": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xigen\\Booked\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
