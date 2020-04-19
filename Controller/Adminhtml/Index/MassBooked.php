@@ -31,9 +31,19 @@ class MassBooked extends \Magento\Backend\App\Action
     protected $helper;
 
     /**
-     * @var \Psr\Log\LoggerInterfaces
+     * @var LoggerInterface
      */
     protected $logger;
+
+    /**
+     * @var \Magento\Framework\DB\Adapter\AdapterInterface
+     */
+    protected $connection;
+
+    /**
+     * @var ResourceConnection
+     */
+    protected $resource;
 
     /**
      * @param \Magento\Backend\App\Action\Context $context
