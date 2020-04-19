@@ -35,7 +35,7 @@ class SalesOrderCustomColumn
         $requestName
     ) {
         $result = $proceed($requestName);
-        if ($requestName == 'sales_order_grid_data_source') {
+        if ($requestName == 'ignore_this_logic') {
             if ($result instanceof $this->collection) {
                 $select = $this->collection->getSelect();
                 $select->joinLeft(
